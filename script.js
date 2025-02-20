@@ -132,8 +132,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var dateElement = document.querySelector("date");
 
   dateElement.textContent = Math.floor(
-    Math.floor((new Date() - yourDate) / 1000) / 60 / 60 / 24
-  );
+  Math.floor((new Date() - yourDate) / 1000) / 60 / 60 / 24
+);
 
   function updateClock() {
     var now = new Date();
