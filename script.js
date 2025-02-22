@@ -131,9 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var secondsElement = document.getElementById("seconds");
   var dateElement = document.querySelector("date");
 
-  dateElement.textContent = Math.floor(
-  Math.floor((new Date() - yourDate) / 1000) / 60 / 60 / 24
-);
+  dateElement.textContent = 43; // Hiển thị cố định 43 ngày
 
   function updateClock() {
     var now = new Date();
@@ -163,3 +161,7 @@ developControl.addEventListener("click", () => {
 resetControl.addEventListener("click", () => {
   polaroidPhoto.classList.remove("is-developed");
 });
+document.querySelector(".js-develop-button").addEventListener("click", function() {
+  document.querySelector(".photo").innerHTML = '<img src="anh2" alt="Ảnh đẹp">';
+});
+
